@@ -1,11 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yuniarto portofolio</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
-    
+    <nav>
+        <div class="logo-icon"></div>
+        <section>
+            <a class="nav-item" href="#home">home</a>
+            <a class="nav-item" href="#facilities">Our facilities</a>
+            <a class="nav-item" href="#message-us">Message Us</a>
+        </section>
+    </nav>
+<hr>
+
+    <section class="section-container">
+        <!-- Home -->
+        <section id="home">
+            <header>
+                <h1>Hi <span id="name">alvin</span> Welcome to schoollab</h1>
+            </header>
+
+            <article>
+                <p>learn with fun just at here</p>
+
+                <div class="banner-container">
+                    <img class="img-slideshow" src="assets/gambar1.jpg" alt="">
+                    <img class="img-slideshow" src="assets/gambar2.jpg" alt="">
+                    <img class="img-slideshow" src="assets/gambar3.jpg" alt="">
+                </div>
+            </article>
+        </section>
+<hr>
+<!-- Our facilities -->
+        <section id="facilities">
+            <header>
+                <h1>Our facilities</h1>
+            </header>
+
+            <article class="facilities">
+                <div class="facilities-content">
+                    <img src="assets/namagambar1.jpg">
+                    <h3>playground</h3>
+                </div>
+
+                <div class="facilities-content">
+                    <img src="assets/namagambar2.jpg">
+                    <h3>massive library</h3>
+                </div>
+
+                <div class="facilities-content">
+                    <img src="assets/namagambar3.jpg">
+                    <h3>aprroved by local goverment</h3>
+                </div>
+            </article>
+        </section>
+<hr>
+        <!-- Message Us -->
+        <section id="message-us">
+          <header>
+              <h1>Message Us</h1>
+              <h2 class="heading">Contact us bellow</h2>
+          </header>
+<section class="messages" id="messages">
+              <!-- Form -->
+              <section class="message-container">
+                  <div class="table-container">
+                      <form name="form-input" onsubmit="return displayResult(event)">
+                          <table class="main-table">
+                              <tr class="nama">
+                                  <td class="label-msg">Nama</td>
+                                  <td>:</td>
+                                  <td>
+                                      <input type="text" class="nm" name="nama" id="name" placeholder="Nama">
+                                  </td>
+                              </tr>
+                              <tr class="tlr">
+                                  <td class="label-msg">Tanggal Lahir</td>
+                                  <td>:</td>
+                                  <td>
+                                      <input type="date" class="ttl" name="tgl_lahir" id="dob">
+                                  </td>
+                              </tr>
+<tr class="jk">
+                                  <td class="label-msg">Jenis Kelamin</td>
+                                  <td>:</td>
+                                  <td>
+                                      <input type="radio" name="gender" value="Pria"> Pria
+                                      <input type="radio" name="gender" value="Wanita"> Wanita
+                                  </td>
+                              </tr>
+                              <tr class="msg">
+                                  <td class="label-msg">pesan</td>
+                                  <td>:</td>
+                                  <td>
+                                      <textarea name="message" placeholder="pesan"></textarea>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <p id="error-msg"></p>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td><input type="submit" value="Submit"></td>
+                              </tr>
+                          </table>
+                      </form>
+                  </div>
+<!-- Result -->
+                  <section class="Result-container">
+                      <div class="form-result">
+                          <p id="currentTime"></p>
+                          <p><strong>Nama:</strong> <span id="outputName"></span></p>
+                          <p><strong>Tanggal lahir:</strong> <span id="outputDob"></span></p>
+                          <p><strong>Jenis Kelamin:</strong> <span id="outputGender"></span></p>
+                          <p><strong>Pesan:</strong> <span id="outputMessage"></span></p>
+                      </div>
+                  </section>
+              </section>
+          </section>
+      </section>
+
+<footer>
+
+</footer>
 </body>
+<script src="js/script.js"></script>
+
+
 </html>

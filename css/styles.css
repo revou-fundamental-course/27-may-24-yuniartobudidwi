@@ -1,1 +1,116 @@
-/* Ini Css */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+  }
+  
+  nav>section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: url(https://picsum.photos/200);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .nav-item {
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+  
+  }
+  
+  .facilities {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .facilities .facilities-content{
+    width: 15%;
+  }
+  .facilities .facilities-content img{
+    width: 100%;
+    border-radius: 500px;
+  }
+  
+  .form-result {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  
+  .message-container {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    width: 60%;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  #message-us header{
+    width: 80%;
+    margin: 0 auto;
+  }
+  #message-us{
+    padding-bottom: 100px;
+  }
+  
+  .Result-container {
+    width: 50%;
+  }
+  
+  article.form table .table-row{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin-bottom: 10px;
+  }
+  article.form table .table-row td.label{
+    width: 150px;
+  }
+  article.form table .table-row td.input-table{
+    margin-left: 5px;
+  }
+  article.form table .table-row td.input-table .input-text{
+    width: 50px;
+  }
+  article.form input#btn-submit{
+    width: 50%;
+  }
+  section.section-container{
+    width: 80%;
+    margin: auto auto;
+  }
+  section.section-container #home{
+    margin: auto auto;
+    width: 90%;
+  }
+  section.section-container #home header h1{
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  section.section-container #home header{
+    margin-bottom: 2rem;
+  }
+  section.section-container #home article p{
+    font-size: 18px;
+    margin-bottom: 1rem;
+    color: #BDBDC2;
+  }
+  section.section-container #home .banner-container{
+    border: 1px solid #35323d;
+    border-radius: 4px;
+  }
+  section.section-container #home article .banner-container img{
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 4px;
+  }
